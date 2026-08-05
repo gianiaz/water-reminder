@@ -22,6 +22,6 @@ Zero app aperte in background, zero consumo inutile di RAM.
 Clona il repository ed esegui lo script di installazione:
 
 ```bash
-git clone [https://github.com/](https://github.com/gianiaz/water-reminder.git
-cd mac-water-reminder
+git clone https://github.com/gianiaz/water-reminder.git
+cd water-reminder
 chmod +x install.sh && ./install.sh

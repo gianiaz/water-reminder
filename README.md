@@ -25,3 +25,21 @@ Clona il repository ed esegui lo script di installazione:
 git clone https://github.com/gianiaz/water-reminder.git
 cd water-reminder
 chmod +x install.sh && ./install.sh
+```
+
+Al termine dell'installazione, verifica il funzionamento controllando il log:
+
+```bash
+cat ~/water_reminder.log
+```
+
+---
+
+## 📋 Log e Debugging
+
+Il sistema crea un file di log in `~/water_reminder.log` che registra:
+- ✅ **OK**: Quando il reminder pronuncia una frase
+- ⏭️ **SKIP**: Quando è fuori orario lavorativo
+- ❌ **ERRORE**: Se il file delle frasi non viene trovato
+
+Puoi modificare gli orari lavorativi editando direttamente le variabili `INIZIO_*` e `FINE_*` nel file `install.sh` prima di eseguirlo.
